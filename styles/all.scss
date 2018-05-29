@@ -1,0 +1,97 @@
+@import "node_modules/bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Slabo+13px|Source+Sans+Pro:300,400');
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Slabo 13px', serif;
+}
+
+.hero {
+  height: 50vh;
+  display: flex;
+
+  @media (max-width: 600px) {
+    display: block;
+    height: auto;
+
+    .background {
+      flex: 1;
+      height: 40vh;
+      clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 75%) !important;
+    }
+
+    .caption {
+      flex: inherit inherit inherit !important;
+    }
+  }
+
+  .background {
+    background-image: url('/assets/seeking_human_kindness.jpg');
+    background-position: center right;
+    background-size: cover;
+    flex: 1 0 60%;
+    clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
+  }
+
+  .caption {
+    flex: 1 0 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+  }
+}
+
+.jumbotron.jumbotron-mission {
+  background-color: #86BBD8;
+}
+
+.icon-container {
+  font-size: 48px;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.row.profile {
+  margin-top: 32px;
+
+  .image-container {
+    margin: auto;
+    margin-bottom: 16px;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.col-learn-more {
+  margin-top: 64px;
+
+  .learn-more {
+    a {
+      display: block;
+      margin-bottom: 0.5em;
+    }
+  }
+}
+
+.jumbotron.jumbotron-footer {
+  background-color: #636e72;
+  color: white;
+  margin-top: 128px;
+  margin-bottom: 0;
+
+  p {
+    width: 100%;
+    text-align: right;
+  }
+
+  a {
+    color: white;
+    text-decoration: underline;
+  }
+}
