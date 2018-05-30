@@ -6336,6 +6336,7 @@ body {
   font-family: 'Source Sans Pro', sans-serif; }
 
 h1, h2, h3, h4, h5, h6 {
+  display: block;
   font-family: 'Slabo 13px', serif; }
 
 .hero {
@@ -6359,6 +6360,17 @@ h1, h2, h3, h4, h5, h6 {
     flex: 1 0 60%;
     -webkit-clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
             clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%); }
+    .hero .background.background-approach {
+      background-image: url("/assets/cover.png"); }
+    .hero .background.background-seattle {
+      background-position: center;
+      background-image: url("/assets/seattle.jpg"); }
+    .hero .background.background-brand {
+      background-image: url("/assets/logo/logo_colored_dark_outline.svg");
+      background-size: 50%;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-color: #86BBD8; }
   .hero .caption {
     flex: 1 0 40%;
     display: flex;
@@ -6399,3 +6411,51 @@ h1, h2, h3, h4, h5, h6 {
   .jumbotron.jumbotron-footer a {
     color: white;
     text-decoration: underline; }
+
+.expandable {
+  border: 1px solid #636e72;
+  margin: 16px 0; }
+  .expandable .col {
+    padding: 0 !important; }
+  .expandable h3 {
+    background-color: #2274A5;
+    color: white;
+    padding: 32px 48px 32px 32px;
+    margin-bottom: 0;
+    transition: 250ms all;
+    cursor: pointer; }
+    .expandable h3:hover {
+      background-color: #86BBD8; }
+    .expandable h3 .fas {
+      float: right;
+      transition: 250ms all; }
+  .expandable .content {
+    max-height: 0;
+    padding: 0 32px;
+    overflow-x: hidden;
+    transition: 250ms all; }
+  .expandable .expanded .fas {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg); }
+  .expandable .expanded .content {
+    padding: 32px;
+    max-height: 999px; }
+
+.link-container {
+  display: flex;
+  flex-wrap: wrap; }
+  .link-container li {
+    flex: 1 0 50%; }
+
+.container img {
+  max-width: 100%;
+  text-align: center; }
+
+.space-top {
+  padding-top: 64px; }
+
+.landing-content {
+  text-align: center; }
+
+.landing-logo {
+  height: 200px; }
