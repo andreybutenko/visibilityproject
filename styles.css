@@ -6380,6 +6380,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .jumbotron.jumbotron-mission {
   background-color: #86BBD8; }
+  .jumbotron.jumbotron-mission .lead {
+    font-size: 1.5rem; }
 
 .icon-container {
   font-size: 48px;
@@ -6459,3 +6461,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .landing-logo {
   height: 200px; }
+
+.btn {
+  word-break: break-word;
+  white-space: normal; }
